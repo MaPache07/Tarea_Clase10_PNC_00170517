@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<title>Ingreso de nuevo alumno</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="mt-4">Ingreso de nuevo alumno</h1>
+    </div>
+    <div class="card-body">
+        <p class="mb-0">Ingrese las credenciales del alumno:</p>
+        <div class="card-body">
+            <form method="post" th:action="@{/validar}">
+                <div class="form-group"><label class="small-mb" for="names">Nombres: </label><input class="form-control py-4" id="names" type="text" placeholder="Nombres" name="names" /></div>
+                <div class="form-group"><label class="small-mb" for="lastnames">Apellidos: </label><input class="form-control py-4" id="lastnames" type="text" placeholder="Apellidos" name="lastnames"/></div>
+                <div class="form-group"><label class="small-mb" for="birthdate">Fecha de nacimiento: </label><input class="form-control py-4" id="birthdate" type="date" name="birthdate" required/></div>
+                <div class="form-group"><label class="small-mb" for="place">Lugar de nacimiento: </label><input class="form-control py-4" id="place" type="text" placeholder="Lugar de nacimiento" name="place"/></div>
+                <div class="form-group"><label class="small-mb" for="school">Colegio de procedencia: </label><input class="form-control py-4" id="school" type="text" placeholder="Colegio de procedencia" name="school"/></div>
+                <div class="form-group"><label class="small-mb" for="phonef">Telefono fijo: </label><input class="form-control py-4" id="phonef" type="number" placeholder="Telefono fijo" name="phonef"/></div>
+                <div class="form-group"><label class="small-mb" for="phonem">Telefono movil: </label><input class="form-control py-4" id="phonem" type="number" placeholder="Telefono movil" name="phonem"/></div>
+                <div class="form-group"><input type="submit" class="btn btn-primary" value="Guardar alumno"></a></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
